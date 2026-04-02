@@ -3,49 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kỹ thuật viên cơ khí - HUATAI VIỆT NAM</title>
+    <title>Tuyển dụng Kỹ thuật viên cơ khí - HUATAI VIỆT NAM</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <style>
         .job-detail-card {
             background: var(--bg-white);
-            padding: 3rem;
-            border-radius: 2rem;
+            padding: 1.5rem 2rem;
+            border-radius: 1.5rem;
             border: 1px solid var(--border);
             box-shadow: var(--shadow-xl);
-            margin-top: -50px;
+            margin-top: -20px;
             position: relative;
             z-index: 10;
         }
         .info-list {
             list-style: none;
             display: grid;
-            gap: 1.5rem;
+            gap: 0.5rem;
         }
         .info-item {
             display: flex;
-            gap: 1rem;
+            gap: 0.75rem;
             align-items: flex-start;
-            padding-bottom: 1rem;
+            padding-bottom: 0.5rem;
             border-bottom: 1px solid var(--bg-soft);
+            font-size: 0.9rem;
+        }
+        .info-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
         }
         .info-number {
             background: var(--accent);
             color: white;
-            width: 28px;
-            height: 28px;
+            width: 20px;
+            height: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 8px;
+            border-radius: 6px;
             font-weight: 800;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             flex-shrink: 0;
-            margin-top: 2px;
+            margin-top: 3px;
         }
         .info-label {
             font-weight: 700;
             color: var(--primary);
-            min-width: 180px;
+            min-width: 140px;
         }
         .info-content {
             color: var(--text-main);
@@ -53,13 +58,14 @@
         }
         .sub-list {
             list-style: none;
-            margin-top: 0.5rem;
+            margin-top: 0.25rem;
         }
         .sub-list li {
             position: relative;
-            padding-left: 1.5rem;
-            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+            margin-bottom: 0.25rem;
             color: var(--text-muted);
+            line-height: 1.4;
         }
         .sub-list li::before {
             content: "—";
@@ -68,11 +74,22 @@
             color: var(--accent);
         }
         .contact-action-box {
-            margin-top: 3rem;
-            padding: 2rem;
+            margin-top: 1.5rem;
+            padding: 1rem;
             background: var(--accent-soft);
-            border-radius: 1.5rem;
+            border-radius: 1rem;
             text-align: center;
+        }
+        .contact-action-box h3 {
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+        }
+        .btn-compact {
+            padding: 0.5rem 1.5rem;
+            font-size: 0.9rem;
+        }
+        header nav {
+            height: 60px;
         }
     </style>
 </head>
@@ -82,23 +99,21 @@
             <nav>
                 <a href="../index.html" class="logo">HUATAI VIỆT NAM</a>
                 <ul class="nav-links">
-                    <li><a href="../index.html#about">Về chúng tôi</a></li>
-                    <li><a href="../index.html#profile">Hồ sơ doanh nghiệp</a></li>
-                    <li><a href="../index.html#careers">Tuyển dụng</a></li>
+                    <li><a href="../index.html#careers" style="color: var(--accent);">&larr; Quay lại</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero" style="padding: 140px 0 100px; background: var(--primary); color: white;">
+        <section class="hero" style="padding: 90px 0 40px; background: var(--primary); color: white;">
             <div class="container">
-                <div class="badge" style="background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.2);">Thông báo tuyển dụng</div>
-                <h1 style="color: white; margin-bottom: 0;">Kỹ thuật viên cơ khí</h1>
+                <div class="badge" style="margin-bottom: 0.5rem; background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.2);">Thông báo tuyển dụng</div>
+                <h1 style="color: white; margin-bottom: 0; font-size: 2rem;">Kỹ thuật viên cơ khí</h1>
             </div>
         </section>
 
-        <section class="container" style="padding-top: 0;">
+        <section class="container" style="padding-top: 0; padding-bottom: 20px;">
             <div class="job-detail-card">
                 <div class="info-list">
                     <div class="info-item">
@@ -118,10 +133,10 @@
                         <div class="info-label">Mô tả công việc:</div>
                         <div class="info-content">
                             <ul class="sub-list">
-                                <li>Thiết kế kỹ thuật: Sử dụng phần mềm chuyên dụng để vẽ bản vẽ chi tiết và thiết kế các loại đồ gá (jig, fixture).</li>
-                                <li>Quản lý thiết bị: Theo dõi, kiểm tra và quản lý hệ thống đồ gá; đảm bảo độ chính xác kỹ thuật và bảo trì định kỳ.</li>
-                                <li>Hỗ trợ sản xuất: Xử lý các sự cố kỹ thuật tại dây chuyền, hướng dẫn công nhân sử dụng đồ gá và tối ưu hóa quy trình gia công.</li>
-                                <li>Kiểm soát chất lượng: Kiểm tra thông số kỹ thuật của sản phẩm sau gia công, đảm bảo tuân thủ tiêu chuẩn chất lượng của nhà máy.</li>
+                                <li>Thiết kế kỹ thuật: Dùng phần mềm vẽ bản vẽ chi tiết & thiết kế đồ gá.</li>
+                                <li>Quản lý thiết bị: Theo dõi, quản lý, bảo trì hệ thống đồ gá.</li>
+                                <li>Hỗ trợ sản xuất: Xử lý sự cố kỹ thuật, tối ưu hóa quy trình.</li>
+                                <li>Kiểm soát chất lượng: Kiểm tra thông số sản phẩm, đảm bảo tiêu chuẩn.</li>
                             </ul>
                         </div>
                     </div>
@@ -135,17 +150,13 @@
                     <div class="info-item">
                         <div class="info-number">5</div>
                         <div class="info-label">Yêu cầu trình độ:</div>
-                        <div class="info-content">Tiếng Trung thành thạo 4 kỹ năng. Máy tính văn phòng thành thạo.</div>
+                        <div class="info-content">Tiếng Trung 4 kỹ năng. Thành thạo tin học VP.</div>
                     </div>
 
                     <div class="info-item">
                         <div class="info-number">6</div>
                         <div class="info-label">Yêu cầu kinh nghiệm:</div>
-                        <div class="info-content">
-                            <ul class="sub-list">
-                                <li>Kinh nghiệm 3 năm trở lên ở vị trí Kỹ thuật viên cơ khí</li>
-                            </ul>
-                        </div>
+                        <div class="info-content">Kinh nghiệm 3 năm trở lên ở vị trí tương đương.</div>
                     </div>
 
                     <div class="info-item">
@@ -163,7 +174,7 @@
                     <div class="info-item">
                         <div class="info-number">9</div>
                         <div class="info-label">Địa điểm làm việc:</div>
-                        <div class="info-content">CÔNG TY TNHH HUATAI VIỆT NAM, Số 11 km 92 đường 5 mới, Phường Hồng Bàng, TP Hải Phòng, Việt Nam.</div>
+                        <div class="info-content">Số 11 km 92 đường 5 mới, P. Hồng Bàng, TP Hải Phòng.</div>
                     </div>
 
                     <div class="info-item">
@@ -172,40 +183,17 @@
                         <div class="info-content">25/03/2026 – 05/04/2026</div>
                     </div>
 
-                    <div class="info-item" style="border-bottom: none;">
+                    <div class="info-item" style="border-bottom: none; padding-bottom: 0;">
                         <div class="info-number">11</div>
-                        <div class="info-label">Thông tin liên hệ:</div>
-                        <div class="info-content">
-                            <p><strong>Vũ Thị Thu Nga</strong></p>
-                            <ul class="sub-list">
-                                <li>SĐT/Zalo: 0388556908</li>
-                                <li>Email: tuyendung.huataivn@gmail.com</li>
-                            </ul>
+                        <div class="info-label">Liên hệ ứng tuyển:</div>
+                        <div class="info-content" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+                            <span><strong>Vũ Thị Thu Nga</strong> | Zalo: <strong>0388556908</strong> | Email: <strong>tuyendung.huataivn@gmail.com</strong></span>
+                            <a href="https://zalo.me/0388556908" class="btn btn-primary" style="background: var(--accent); border: none; padding: 0.4rem 1.2rem; font-size: 0.85rem; border-radius: 0.5rem; text-decoration: none;">Ứng tuyển Zalo</a>
                         </div>
                     </div>
                 </div>
-
-                <div class="contact-action-box">
-                    <h3 style="margin-bottom: 1rem;">Sẵn sàng gia nhập Huatai Việt Nam?</h3>
-                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                        <a href="https://zalo.me/0388556908" class="btn btn-primary" style="background: var(--accent); border: none; padding: 0.75rem 2rem;">Ứng tuyển qua Zalo</a>
-                        <a href="mailto:tuyendung.huataivn@gmail.com" class="btn btn-outline" style="background: white;">Gửi CV qua Email</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="../index.html" style="color: var(--text-muted); text-decoration: none; font-weight: 600;">&larr; Quay lại danh sách tuyển dụng</a>
             </div>
         </section>
     </main>
-
-    <footer style="margin-top: 100px;">
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2026 HUATAI VIETNAM CO.,LTD. Tất cả các quyền được bảo lưu.</p>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
