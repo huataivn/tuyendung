@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary: #022c22;
+  --accent: #00b14f;
+  --accent-soft: #e6f7ed;
+  --text-main: #1f2937;
+  --text-muted: #6b7280;
+  --bg-white: #ffffff;
+  --bg-soft: #f9fafb;
+  --glass: rgba(255, 255, 255, 0.85);
+  --border: #e5e7eb;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 177, 79, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--text-main);
+  background-color: var(--bg-white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Glassmorphism Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary);
+  text-decoration: none;
+  letter-spacing: -0.025em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: var(--accent);
+  border-radius: 6px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* Hero Section - Gradient Mesh Style */
+.hero {
+  padding: 160px 0 100px;
+  background: 
+    radial-gradient(circle at 0% 0%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 100% 100%, rgba(59, 130, 246, 0.05) 0%, transparent 50%);
+  text-align: center;
+  position: relative;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 16px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.05em;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  color: var(--text-muted);
+  max-width: 650px;
+  margin: 0 auto 3rem;
+}
+
+/* Bento Grid for Stats */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.bento-item {
+  background: var(--bg-soft);
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  border: 1px solid var(--border);
+  text-align: left;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bento-item:hover {
+  transform: translateY(-8px);
+  background: var(--bg-white);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--accent);
+}
+
+.bento-item span {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.bento-item h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* Section Headings */
+section {
+  padding: 120px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  margin-bottom: 1rem;
+}
+
+/* Info Cards Layout */
+.info-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.info-content {
+  display: grid;
+  gap: 2rem;
+}
+
+.info-box {
+  padding: 2rem;
+  background: var(--bg-soft);
+  border-radius: 1.5rem;
+  border-left: 4px solid var(--accent);
+}
+
+.info-box h4 {
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+/* Modern Job Cards */
+.job-cards {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.job-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.job-link:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+  transform: scale(1.01);
+}
+
+.job-main h3 {
+  color: var(--primary);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-details {
+  display: flex;
+  gap: 1.5rem;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.job-details span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Footer Section */
+footer {
+  background: var(--primary);
+  color: #94a3b8;
+  padding: 80px 0 40px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 60px;
+}
+
+.footer-top h2 {
+  color: var(--bg-white);
+  margin-bottom: 1.5rem;
+}
+
+.footer-top h4 {
+  color: var(--bg-white);
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.footer-top ul {
+  list-style: none;
+}
+
+.footer-top li {
+  margin-bottom: 1rem;
+}
+
+.footer-top a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-top a:hover {
+  color: var(--bg-white);
+}
+
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  padding-top: 40px;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .bento-grid { grid-template-columns: repeat(2, 1fr); }
+  .info-layout { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .hero h1 { font-size: 2.5rem; }
+  .bento-grid { grid-template-columns: 1fr; }
+  .footer-top { grid-template-columns: 1fr; gap: 2.5rem; }
+}
